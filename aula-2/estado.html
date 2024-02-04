@@ -21,9 +21,11 @@
     <div id="root"></div>
 
     <script type="text/babel">
-
+      //children para adicionar texto ao botão, e ...props para espalhar as propriedades pq vem como objeto
         function Botaozinho({children = 'Clique-me', ...props}) {
+          //crio uma variavel chamada {valorInicial} que recebe a props.valorInicia
             const { valorInicial } = props
+          //crio um useState a partir do valorInicial
             const [contador, setContador] = React.useState(valorInicial)
 
             // function alterarValor() {
@@ -34,6 +36,7 @@
             // }
 
             return (
+              //o Botaozinho é um componente button, possui onClick chamando uma arrow function passando o setContador passando como parâmetro o calculo que resulta o próximo 'contador'
                 <button onClick={() => setContador(contador + 1)}>
                     {children} {valorInicial >= 0 ? `(${contador})` : null}
                 </button>

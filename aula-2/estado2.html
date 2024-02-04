@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aula 02 - Estados</title>
+    <title>Aula 02 - Estados 2</title>
     <script
       type="text/javascript"
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -22,6 +22,7 @@
 
     <script type="text/babel">
       function List(props) {
+        // ou seja: items = props.items, e items é o array listItems
         const { items } = props;
 
         // const newItems = [
@@ -72,6 +73,7 @@
         ]);
 
         return (
+          // toda vez que der enter vai ser crianda uma nova lista contendo a lista anterior espalhada e o item passado como parametro
           <>
             <h1>Aula 2</h1>
             <Input onEnter={(item) => {
