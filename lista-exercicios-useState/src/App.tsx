@@ -9,6 +9,11 @@ function App() {
         Crie um componente funcional simples chamado Counter. Utilize o hook useState para gerenciar um estado count iniciado em 0. Exiba o valor de count no componente e adicione dois botões, um para incrementar e outro para decrementar o valor de count em 1. 
       </p>
       <Counter/>
+      <h2>Exercício 2 - Básico:</h2>
+      <p>
+      Modifique o componente Counter para incluir um novo estado step, iniciado em 1. Agora, ao clicar nos botões de incremento e decremento, o valor de count deve ser alterado de acordo com o valor de step.
+      </p>
+      <Counter step={1}/>
     </>
   )
 }

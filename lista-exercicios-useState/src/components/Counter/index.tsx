@@ -1,20 +1,28 @@
-import { useState } from "react"
+import { useState, FC } from "react"
 
-function Counter() {
-  const [contador, setContador] = useState(0)
+interface CounterProps {
+  step?: number
+}
+
+const Counter: FC<CounterProps> = ({step}) => {
+  const [contador, setContador] = useState(step || 0 )
+
   function incrementar(){
     setContador(contador + 1)
     console.log(contador)
   }
   function decrementar(){
-    setContador(contador - 1)
-    console.log(contador)
+    if (contador > 0) {
+      setContador(contador - 1)
+      console.log(contador)
+    }
   }
+
   return (
     <>
-    <p>{contador}</p>
-    <button onClick={incrementar} >Incrementar </button>
-    <button onClick={decrementar} >Decremetar</button>
+      <p>{contador}</p>
+      <button onClick={incrementar} >Incrementar </button>
+      <button onClick={decrementar} >Decremetar</button>
     </>
   )
 }
