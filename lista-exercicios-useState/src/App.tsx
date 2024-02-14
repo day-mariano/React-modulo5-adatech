@@ -1,4 +1,5 @@
 import Counter from "./components/Counter"
+import Form from "./components/Form"
 
 function App() {
   return (
@@ -11,9 +12,14 @@ function App() {
       <Counter/>
       <h2>Exercício 2 - Básico:</h2>
       <p>
-      Modifique o componente Counter para incluir um novo estado step, iniciado em 1. Agora, ao clicar nos botões de incremento e decremento, o valor de count deve ser alterado de acordo com o valor de step.
+        Modifique o componente Counter para incluir um novo estado step, iniciado em 1. Agora, ao clicar nos botões de incremento e decremento, o valor de count deve ser alterado de acordo com o valor de step.
       </p>
       <Counter step={1}/>
+      <h2>Exercício 3 - Intermediário:</h2>
+      <p>
+        Crie um componente chamado Form com um formulário simples contendo campos para nome e idade. Utilize o hook useState para gerenciar os estados name e age. Exiba os valores desses estados no componente e permita que o usuário os atualize através do formulário.
+      </p>
+      <Form/>
     </>
   )
 }
