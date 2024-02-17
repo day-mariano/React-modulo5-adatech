@@ -1,5 +1,6 @@
 import Counter from "./components/Counter"
 import Form from "./components/Form"
+import DynamicList from "./components/DynamicList"
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
         Crie um componente chamado Form com um formulário simples contendo campos para nome e idade. Utilize o hook useState para gerenciar os estados name e age. Exiba os valores desses estados no componente e permita que o usuário os atualize através do formulário.
       </p>
       <Form/>
+      <h2>Exercício 4 - Avançado:</h2>
+      <p>
+      Crie um componente chamado DynamicList que mantenha uma lista dinâmica de itens. Utilize o hook useState para gerenciar o estado da lista. Adicione a capacidade de adicionar novos itens à lista através de um formulário. Cada item deve conter um texto e um botão para removê-lo da lista.
+      </p>
+      <DynamicList/>
     </>
   )
 }
