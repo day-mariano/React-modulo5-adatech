@@ -7,7 +7,7 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({ children, ...props }) => {
-  const [cont, setCont] = useState(0)
+  const [cont, setCont] = useState<number>(0)
 
   const handleClick = () => {
 

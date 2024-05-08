@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "../components/Button";
 import { ButtonBoolean } from "../components/ButtonBoolean";
+import { Input } from "../components/Input";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <button onClick={mostrarMensagem}>Exibir texto</button>
       <Button>Clique-me</Button>
       <ButtonBoolean>Clique-me</ButtonBoolean>
+      <Input type={"text"}></Input>
     </>
   );
 }

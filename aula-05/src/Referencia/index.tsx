@@ -2,7 +2,8 @@
 
 const Referencia = () => {
 
-  return <></>
+
+  return <>referencia</>
 
 }
 
