@@ -3,11 +3,11 @@ import { useEffect } from "react"
 import { useState } from 'react'
 
 const Ciclo2 = () => {
-  const [nome, setNome] = useState('nome no botão para ter ums surpresa')
+  const [nome, setNome] = useState('clique no botão para ter uma surpresa')
 
   const atualizar = () => {
     console.log("atualizou")
-    return recadinho()
+    // return recadinho()
   }
 
   const recadinho = () => {
@@ -15,7 +15,7 @@ const Ciclo2 = () => {
   }
 
   useEffect(() => {
-    console.log("useEffect na prática")
+    // console.log("useEffect na prática")
     // alert("A página foi renderizada e como efeito colateral vc ganha um alerta :)");
     return atualizar
   })
